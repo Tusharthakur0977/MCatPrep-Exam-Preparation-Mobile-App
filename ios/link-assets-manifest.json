@@ -1,0 +1,193 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/Assets/Fonts/Inter-Bold.ttf",
+      "sha1": "9461e7c083137c2abe6d198f784fb0d341a527a1"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-BoldItalic.ttf",
+      "sha1": "fa76cc71099cb5e2b29c88db8b09eae6fc2e8e22"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-ExtraBold.ttf",
+      "sha1": "872bc40675c084c451af1c3eb10e21c13e2008a3"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-ExtraBoldItalic.ttf",
+      "sha1": "0c2736695376051b85340197d8ca877a8e05e366"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-ExtraLight.ttf",
+      "sha1": "aed9270b1ec764bb809a7bc7ddde66e39c6836c2"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-ExtraLightItalic.ttf",
+      "sha1": "edcda582c10721ff1ecee6cab6cbda5dc9da19aa"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-Italic.ttf",
+      "sha1": "0b141c525015d767f7143106b4a424fd282fba71"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-Light.ttf",
+      "sha1": "8a6e2acc8d9c4fbbbbefc2fb34ebfcd8216c6b6e"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-LightItalic.ttf",
+      "sha1": "8d0000b7fb64c636ad30f12e8aed2d3915f31731"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-Medium.ttf",
+      "sha1": "c1d25d8c10adb45a970e71c387bbd6380f10992d"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-MediumItalic.ttf",
+      "sha1": "57dd74a5e73094c7cfc90eff5e6a33998fff8a40"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-Regular.ttf",
+      "sha1": "6e3430f906a4b42b4b63fd8f33e498a43d9f8d84"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-SemiBold.ttf",
+      "sha1": "b4bdaf6bdd6a479b46c452a7bbae13f5cb2079bf"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-SemiBoldItalic.ttf",
+      "sha1": "45b62a0ed702c13cb3fa9ccb02e2aec3eab24331"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-Thin.ttf",
+      "sha1": "50d48fc8e929b3a706e5d4ec58a75e89827ec7f4"
+    },
+    {
+      "path": "src/Assets/Fonts/Inter-ThinItalic.ttf",
+      "sha1": "2d8a2be880c23111112da12b3f7cd83dc636656a"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-Bold.ttf",
+      "sha1": "508c35dee818addce6cc6d1fb6e42f039da5a7cf"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-BoldItalic.ttf",
+      "sha1": "03440bfa71172aaa6b8ba6da86ac60d667b55c1e"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-ExtraBold.ttf",
+      "sha1": "3dbfd71b6fbcfbd8e7ee8a8dd033dc5aaad63249"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-ExtraBoldItalic.ttf",
+      "sha1": "0c1a0709d9772d20419c1b5868d19631c63861f6"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-ExtraLight.ttf",
+      "sha1": "df556e64732e5c272349e13cb5f87591a1ae779b"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-ExtraLightItalic.ttf",
+      "sha1": "1b0b602c97a479fed89900c64a0b9242d459ed19"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-Italic.ttf",
+      "sha1": "55534e771bbbb6b649746802cabfdeb922b9eb3a"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-Light.ttf",
+      "sha1": "318b44c0a32848f78bf11d4fbf3355d00647a796"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-LightItalic.ttf",
+      "sha1": "565cd54ab54fdfa1be7c62fce75048d7ef0737e6"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-Medium.ttf",
+      "sha1": "fa5192203f85ddb667579e1bdf26f12098bb873b"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-MediumItalic.ttf",
+      "sha1": "debc1546314dd5655403df6965878d3f8dc41897"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-Regular.ttf",
+      "sha1": "3bff51436aa7eb995d84cfc592cc63e1316bb400"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-SemiBold.ttf",
+      "sha1": "9ca139684fe902c8310dd82991648376ac9838db"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-SemiBoldItalic.ttf",
+      "sha1": "21a14c8c35225cbd714af050086d3b17a1ae5df8"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-Thin.ttf",
+      "sha1": "8e098a207d2ace83e873d02b76acba903d819f74"
+    },
+    {
+      "path": "src/Assets/Fonts/Roboto-ThinItalic.ttf",
+      "sha1": "b20989b4dd1168286dca1f24193fe78f51e60f6b"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-Black.ttf",
+      "sha1": "c44ef6d3d99d3a0f7545a2a387c5a539ac54927e"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-BlackItalic.ttf",
+      "sha1": "87ee3027dc92881bb894dee9055a8e981253ce7c"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-Bold.ttf",
+      "sha1": "4aad5243cee047469b80f96a92714f2e88418785"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-BoldItalic.ttf",
+      "sha1": "be1a697996c4e7996d7118d199d7169c327b1b24"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-ExtraBold.ttf",
+      "sha1": "98cc0f956b0ef647c14d9103cfb8af317c4a9b18"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-ExtraBoldItalic.ttf",
+      "sha1": "005a89df0e2b6000f34e55e70bde72ed72d1aa13"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-Italic.ttf",
+      "sha1": "f158826724189b30d0c24eb83c4c0ad027359d0f"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-Light.ttf",
+      "sha1": "4e89f40b6b4938fd7e705960c74a0139ec12cae5"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-LightItalic.ttf",
+      "sha1": "f7787cc6a10cf6174dac9d2088d30fd5c712c5ae"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-Medium.ttf",
+      "sha1": "786b4465e48a9b0496800f1d607fd6d8fef8eb8c"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-MediumItalic.ttf",
+      "sha1": "3ea88f8c95e07530295133fe78295d550cdccea7"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-Regular.ttf",
+      "sha1": "01247a7ea5dcb29e28d5fb9f6feb3eb72a1bc3b2"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-SemiBold.ttf",
+      "sha1": "3ba0f03e9880cad05eb919df2e2d0884ca9c9999"
+    },
+    {
+      "path": "src/Assets/Fonts/Rubik-SemiBoldItalic.ttf",
+      "sha1": "ee3f3f0c7ae6cc077048b444a1131e37c508b32c"
+    },
+    {
+      "path": "src/Assets/Fonts/index.ts",
+      "sha1": "e5d872288aa2e46075613e3e5c26f4a227c8d848"
+    }
+  ]
+}
