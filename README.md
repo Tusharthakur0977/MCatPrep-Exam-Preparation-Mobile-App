@@ -1,97 +1,44 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 🎓 MCatPrep Mobile App
 
-# Getting Started
+*A comprehensive, high-performance mobile application designed to help medical students prepare for the MCAT through interactive video lessons, 3D flashcards, and advanced progress tracking.*
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+## 🚀 Tech Stack
 
-## Step 1: Start Metro
+Built with a modern, robust React Native ecosystem focusing on performance and fluid UX.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+*   **Framework:** React Native 0.81.0, React 19.1.0
+*   **State Management:** Redux Toolkit & React-Redux
+*   **Navigation:** React Navigation 7 (Native Stack & Bottom Tabs)
+*   **Animation & Gestures:** React Native Reanimated v4, React Native Gesture Handler
+*   **Video Playback:** React Native Video v7
+*   **In-App Purchases:** React Native IAP
+*   **Authentication:** React Native Auth0
+*   **Storage & File System:** React Native FS, AsyncStorage
+*   **UI/Visuals:** React Native Linear Gradient, SVG, Chart Kit, Calendars
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## ⭐ Spotlight Feature: High-Performance 3D Flashcard Engine
 
-```sh
-# Using npm
-npm start
+The most technically complex feature of this application is the interactive, gesture-driven 3D flashcard deck (`FlashCard.tsx`).
 
-# OR using Yarn
-yarn start
-```
+**Why it was difficult:**
+Building a Tinder-style swipeable card deck that also supports 3D flipping (front/back) is notoriously difficult to get right in React Native. Handling rapid user inputs on the JavaScript thread typically leads to frame drops and sluggish interactions.
 
-## Step 2: Build and run your app
+**How it works under the hood:**
+*   **UI Thread Offloading:** The component heavily utilizes `react-native-reanimated` and `react-native-gesture-handler`. By declaring functions as `'worklet'`s, all gesture calculations (pan, tap) and animation updates are executed strictly on the UI thread, completely bypassing the asynchronous React Native bridge.
+*   **Complex Gesture Coordination:** It uses `Gesture.Simultaneous(panGesture, tapGesture)` to allow users to flip the card (via tap) or drag it (via pan) seamlessly without the gestures canceling each other out.
+*   **Dynamic Feedback Engine:** A `useDerivedValue` hook continuously monitors the pan translation coordinates to determine "swipe confidence" (Left = Negative, Right = Positive, Down = Neutral). This dynamically drives the styling of a gradient overlay, providing real-time visual feedback before the swipe is committed.
+*   **3D Matrix Transformations:** The card utilizes advanced perspective transformations (`perspective: 1000`) and interpolates Y-axis rotation for a realistic 3D flip effect, while dynamically calculating `zIndex` and static tilt angles to simulate a realistic stacked deck.
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+**Problems Solved:**
+This engine guarantees fluid 60FPS animations, prevents main-thread blocking, and cleanly orchestrates state updates by utilizing `scheduleOnRN` to communicate back to the JS thread only when a swipe action is finalized, preventing unnecessary re-renders during the drag state.
 
-### Android
+## 🛠 Key Features
 
-```sh
-# Using npm
-npm run android
+*   **Advanced Video Learning Hub:** Custom integration of `react-native-video` supporting dynamic resolution switching (720p, 540p, 360p), persistent progress tracking via debounced backend synchronization, and real-time conversion of SRT files to VTT for native subtitle rendering.
+*   **Premium Content Gating:** A custom `PremiumGuard` component integrated with `react-native-iap` seamlessly restricts and grants access to premium video lessons and study materials.
+*   **Interactive Whiteboard & Notes:** Users can access linked whiteboard sketches and detailed lecture notes directly synchronized with the current video player context.
+*   **Study Progress Tracking:** Visualizes learning milestones using `react-native-chart-kit` and organizes study schedules with `react-native-calendars`.
 
-# OR using Yarn
-yarn android
-```
+## 💡 Why This Stands Out
 
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
-
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
-
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Building the MCatPrep app required overcoming significant performance bottlenecks associated with continuous gesture animations and complex media handling. By architecting the flashcard engine entirely on the UI thread using Reanimated worklets, and by building a resilient video player that handles dynamic subtitle conversion, on-the-fly resolution switching, and intelligent API progress syncing, I ensured the application maintains a premium, native-feeling experience. This project demonstrates my deep understanding of React Native's architecture, thread management, and my capability to deliver highly interactive, production-ready mobile architectures.
